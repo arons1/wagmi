@@ -9,6 +9,7 @@ export function getInjectedName(ethereum?: Ethereum) {
     if (provider.isCoinbaseWallet) return 'Coinbase Wallet'
     if (provider.isExodus) return 'Exodus'
     if (provider.isFrame) return 'Frame'
+      if (provider.isInfinityWallet) return 'Infinity Wallet'
     if (provider.isMathWallet) return 'MathWallet'
     if (provider.isOpera) return 'Opera'
     if (provider.isTally) return 'Tally'

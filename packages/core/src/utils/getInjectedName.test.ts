@@ -4,6 +4,10 @@ import { getInjectedName } from './getInjectedName'
 
 describe.each([
   { ethereum: undefined, expected: 'Injected' },
+  {
+    ethereum: { isInfinityWallet: true, isMetaMask: true },
+    expected: 'Infinity Wallet',
+  },
   { ethereum: { isBitKeep: true }, expected: 'BitKeep' },
   { ethereum: { isBraveWallet: true }, expected: 'Brave Wallet' },
   {
